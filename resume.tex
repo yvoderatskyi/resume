@@ -1,0 +1,108 @@
+% Intended LaTeX compiler: pdflatex
+
+\documentclass{altacv}
+
+\usepackage{paracol}
+\usepackage[default]{lato}
+
+\pdfinfo {
+    /Author (Yurii Voderatskyi)
+    /Title (Yurii Voderatskyi Resume)
+    /Keywords (Resume;CV)
+    /CreationDate (D:20200621232400)
+}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.5cm,columnsep=1.2cm}
+\AtBeginEnvironment{itemize}{\small}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faStar}
+
+\begin{document}
+\name{Yurii Voderatskyi}
+\tagline{Senior Software Engineer at Revolut}
+\photoR{2.5cm}{photo}
+\personalinfo{
+    \email{voderatskiy@gmail.com}
+    \location{10243, Berlin, Germany}
+    \github{yvoderatskyi}
+    \linkedin{yvoderatskyi}
+}
+
+\makecvheader
+
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{\faBriefcase Work experience}
+\cvevent{Senior Software Engineer}{\faCreditCard Revolut}{March 2020 -- Nowadays}{Berlin, Germany}
+\begin{itemize}
+    \item TBD
+\end{itemize}
+\divider
+\cvevent{Engineering Lead}{\faTshirt Zalando SE}{January 2019 -- March 2020}{Berlin, Germany}
+\begin{itemize}
+    \item {Lead a cross-functional team of BI/Data/Software Engineers that develop and operate cutting-edge data pipelines.}
+    \item {Redesigned and productionalized Merchant Parcel Tracking system.}
+    \item {Delivered a proof-of-concept of Merchant KPI and Metrics Platform.}
+    \item {Automated Customer feedback collection data pipeline.}
+    \item {Doubled the team by hiring high-rank engineers.}
+\end{itemize}
+\divider
+\cvevent{Software Engineer}{\faTshirt Zalando SE}{February 2016 -- January 2019}{Berlin, Germany}
+\begin{itemize}
+    \item {Designed, built and improved distributed large-scale systems for Article Onboarding.}
+    \item {Maintained and improved Merchant Orders System.}
+    \item {Participated in 24x7 on-call support.}
+    \item {Prepared system to high-traffic events.}
+    \item {Reduced infrastructure costs.}
+\end{itemize}
+\divider
+\cvevent{Software Engineer}{\faDatabase Cybervision}{June 2014 -- January 2016}{Kyiv, Ukraine}
+\begin{itemize}
+    \item {Developed a plug-in for provisioning of Big Data Stack on OpenStack.}
+    \item {Maintained Apache Spark distributive of a Big Data Vendor as a Release Engineer.}
+\end{itemize}
+\divider
+\cvevent{Software Developer}{\faFileInvoice UIT}{April 2013 -- June 2014}{Kyiv, Ukraine}
+\begin{itemize}
+    \item {Developed new functionality for the accounting and management systems.}
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{\faStar Skills}
+\cvskill{Software Engineering}{4}
+\cvskill{Leadership}{3}
+\cvskill{Functional Programming}{3}
+\cvskill{Software Architecture}{4}
+\cvskill{System Monitoring}{4}
+\cvskill{Data Engineering}{2}
+
+\cvsection{\faDumbbell Strength}
+\cvtag{Archiever}
+\cvtag{Learner}
+\cvtag{Analytical}
+\cvtag{Focus}
+\cvtag{Restorative}
+
+\cvsection{\faUniversity Education}
+\cvevent{Computerized management and automation systems}{Zhytomyr State Technological University}{2008 -- 2013}{Zhytomyr, Ukraine}
+
+\cvsection{\faLanguage Languages}
+\cvskill{English}{4}
+\cvskill{Ukrainian}{5}
+\cvskill{Russian}{4}
+\cvskill{German}{1}
+
+\cvsection{\faGithub Personal Projects}
+\begin{itemize}
+    \item {https://github.com/yvoderatskyi/Spark-Movie-Recommendation}
+    \item {https://github.com/yvoderatskyi/dotfiles}
+    \item {https://github.com/yvoderatskyi/raspiland}
+\end{itemize}
+
+\end{paracol}
+\end{document}

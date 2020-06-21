@@ -1,0 +1,9 @@
+
+* TODO Prettify link in Personal projects 
+
+* TODO Add gallup note to Strengths section
+
+* TODO Gen word cloud section for projects
+  I want to generate a word cloud like image for word experience.
+
+

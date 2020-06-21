@@ -1,0 +1,12 @@
+#+TITLE: My resume
+#+AUTHOR: Yurii Voderatskyi
+#+OPTIONS: toc:nil
+
+* Why?
+  I could not find a good way to make a nice looking so decided to create one
+  using [[https://www.latex-project.org/][LaTeX]] and the beautiful skin - [[https://github.com/liantze/AltaCV][AltaCV]].
+
+* How to build?
+  #+BEGIN_SRC shell
+    pdflatex resume.tex
+  #+END_SRC
