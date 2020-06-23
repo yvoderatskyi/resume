@@ -6,5 +6,5 @@ I could not find a good way to make a nice looking resume, so decided to create 
 # How to build?
 
 ```shell
-pdflatex resume.tex
+make build
 ```

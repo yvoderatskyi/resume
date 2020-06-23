@@ -8,5 +8,5 @@
 
 * How to build?
   #+BEGIN_SRC shell
-    pdflatex resume.tex
+    make build
   #+END_SRC
