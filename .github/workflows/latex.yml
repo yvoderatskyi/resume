@@ -16,8 +16,33 @@ jobs:
     - name: Build
       run: make build
 
-    - name: Update release
-      uses: johnwbyrd/update-release@v1.0.0
+    - name: Calver Release
+      uses: StephaneBour/actions-calver@master
+      id: calver
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        files: ./resume.pdf
+        date_format: "%Y-%m-%d"
+        release_name: Release ${{ github.ref }}
+        prerelease: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      with:
+        tag_name: ${{ steps.calver.outputs.release }}
+        release_name: Release ${{ github.ref }}
+        prerelease: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+   - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./resume.pdf
+        asset_name: resume.pdf
+        asset_content_type: application/pdf
