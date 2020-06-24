@@ -3,7 +3,7 @@ clean :
 				rm resume.pdf
 
 docker-build :
-				docker build -t latex-build .
+				docker build -t latex-pdf-build .
 
 build: clean docker-build
-				docker run -v ${PWD}:/data -i --rm latex-build /bin/sh -c "pdflatex resume.tex"
+				docker run -v ${PWD}:/data -i --rm latex-pdf-build /bin/sh -c "pdflatex resume.tex"
