@@ -1,3 +1,4 @@
+[GitHub Workflow Status](https://img.shields.io/github/workflow/status/yvoderatskyi/resume/CI?style=for-the-badge)
 
 # Why?
 
