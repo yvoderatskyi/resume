@@ -3,6 +3,7 @@
 #+OPTIONS: toc:nil
 
 [[https://img.shields.io/github/workflow/status/yvoderatskyi/resume/CI?style=for-the-badge][GitHub Workflow Status]]
+
 * Why?
   I could not find a good way to make a nice looking resume, so decided to
   create one using [[https://www.latex-project.org/][LaTeX]] and the beautiful skin - [[https://github.com/liantze/AltaCV][AltaCV]].
