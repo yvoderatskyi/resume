@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yvoderatskyi/resume/CI?style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yvoderatskyi/resume/CI?style=for-the-badge)![GitHub All Releases](https://img.shields.io/github/downloads/yvoderatskyi/resume/total?style=for-the-badge)
 
 # Why?
 

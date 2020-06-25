@@ -2,7 +2,7 @@
 #+AUTHOR: Yurii Voderatskyi
 #+OPTIONS: toc:nil
 
-[[https://img.shields.io/github/workflow/status/yvoderatskyi/resume/CI?style=for-the-badge][GitHub Workflow Status]]
+[[https://img.shields.io/github/workflow/status/yvoderatskyi/resume/CI?style=for-the-badge][GitHub Workflow Status]][[https://img.shields.io/github/downloads/yvoderatskyi/resume/total?style=for-the-badge][GitHub All Releases]]
 
 * Why?
   I could not find a good way to make a nice looking resume, so decided to
