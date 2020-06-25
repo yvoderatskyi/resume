@@ -13,5 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: LaTeX linter
+      uses: j2kun/chktex-action@v1.0.2
 #    - name: Build
 #      run: make build
