@@ -7,3 +7,5 @@ docker-build :
 
 build: clean docker-build
 				docker run -v ${PWD}:/data -i --rm latex-pdf-build /bin/sh -c "pdflatex resume.tex"
+				sudo chmod a+rw resume.pdf
+
